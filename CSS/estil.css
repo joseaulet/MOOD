@@ -1,0 +1,1497 @@
+@font-face {
+    font-family: Futura;
+    src: url("../Fonts/FutuMd__.ttf");
+}
+
+#espases2 {
+    display: none;
+}
+
+.contenidor2 {
+    display: none;
+    background-image: url(../img/fondoAmarillo.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+
+.contenidor1 {
+    background-color: #E45451;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+
+
+.contenidor3 {
+    display: none;
+    background-image: url(../img/fondoAmarillo.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenidor4 {
+    display: none;
+    background-image: url(../img/fondoGris.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+body {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#boton {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+}
+
+.escoge {
+    width: 70%;
+    cursor: pointer;
+}
+
+.contento {
+    border-radius: 10px;
+    width: 7vw;
+    height: 5vh;
+}
+
+.triste {
+    border-radius: 10px;
+    width: 7vw;
+    height: 5vh;
+}
+
+
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+#respuesta {
+    width: 20vw;
+    height: 60vh;
+    background-color: white;
+    background-image: url(../img/detalleCarta2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 50px;
+    border: 15px solid #20345a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.logoMood {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 15vh;
+    margin-bottom: 7%;
+    margin-top: 5vh;
+}
+
+
+
+.botones1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+    margin-bottom: 20vh;
+}
+
+.botones2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+    margin-bottom: 20vh;
+}
+
+#respuesta2 {
+    width: 20vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 50px;
+    background-color: #f4b05a;
+    border: 15px solid #20345a;
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.iconoFlecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vw;
+    background-repeat: no-repeat;
+
+    background-size: 7.5vw;
+    height: 50vh;
+
+    margin-bottom: 5vh;
+
+    background-image: url(../img/flechaDerecha.svg);
+
+    cursor: pointer;
+
+}
+
+.iconoFlecha:hover {
+    background-image: url(../img/FlechaBlanco_Mesa%20de%20trabajo%201%20copia.svg);
+}
+
+.flecha:hover {
+    background-image: url(../img/FlechaBlanco_Mesa%20de%20trabajo%201%20copia.svg);
+}
+
+.flecha {
+    width: 7.5vw;
+    margin-top: 15%;
+    /*    width: 100%;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vw;
+    margin-top: 5%;
+    background-repeat: no-repeat;
+
+    background-size: 7.5vw;
+    height: 10vh;
+
+    background-image: url(../img/flechaDerecha.svg);
+
+    cursor: pointer;
+
+}
+
+.flecha:hover {
+    background-image: url(../img/FlechaBlanco_Mesa%20de%20trabajo%201%20copia.svg);
+}
+
+.contenidor5 {
+    display: none;
+    background-image: url(../img/fondoRojo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#respuesta3 {
+    width: 20vw;
+    height: 60vh;
+    background-color: white;
+    background-image: url(../img/detalleCarta.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 15px solid #20345a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#respuesta4 {
+    width: 20vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 50px;
+    background-color: #E4D7CE;
+    border: 15px solid #20345a;
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.logoCarta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    margin-top: 3vh;
+}
+
+.moodTriste {
+    width: 100%;
+}
+
+
+
+h2 {
+    font-family: "Futura", serif;
+    font-size: 40px;
+    text-align: center;
+    color: #31305f;
+}
+
+.texto1-mobile {
+    display: none;
+    font-family: "Futura", serif;
+    font-size: 30px;
+    text-align: center;
+    color: #31305f;
+    margin-top: 10%;
+}
+
+.switch {
+    background-image: url(../img/Switch.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15vw;
+    width: 100vw;
+/*    height: 100vh;*/
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.indicador {
+    background-image: url(../img/CaraContento.svg);
+    background-size: cover;
+    background-position: center;
+    width: 6vw;
+    height: 6vw;
+    margin-left: 43.5vw;
+}
+
+.contenidooor3 {
+    display: none;
+    background-image: url(../img/fondoRojo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.switch2 {
+    background-image: url(../img/switch2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15vw;
+    width: 100vw;
+/*    height: 100vh;*/
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.indicador2 {
+    background-image: url(../img/microAmarillas.svg);
+    background-size: cover;
+    background-position: center;
+    width: 6vw;
+    height: 6vw;
+    margin-left: 43.5vw;
+}
+
+.indicador3 {
+    background-image: url(../img/CancionesTristes.svg);
+    background-size: cover;
+    background-position: center;
+    width: 6vw;
+    height: 6vw;
+    margin-left: 43.5vw;
+}
+
+.switch3 {
+    background-image: url(../img/switch2.svg);
+    /*    background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15vw;
+    width: 100vw;
+/*    height: 100vh;*/
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#OIL {
+    display: none;
+}
+
+#ODL {
+    display: none;
+}
+
+#Logosentimiento {
+    width: 20%;
+    margin-top: 10%;
+
+}
+
+#C2P1 {
+    display: none;
+}
+
+
+
+#TextoExplicacion {
+    display: none;
+    background-color: #30305f;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 3s;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #E4D7CE;
+    font-family: Futura;
+    font-size: 30px;
+    text-align: center;
+    margin: 200px;
+    line-height: 55px;
+}
+
+#TE {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.botonBlanco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vw;
+    margin-top: 5%;
+    background-repeat: no-repeat;
+
+    background-size: 7.5vw;
+    height: 10vh;
+
+    background-image: url(../img/flechaBuena1.svg);
+
+    cursor: pointer;
+}
+
+.botonBlanco:hover {
+    background-image: url(../img/flechaBuena2.svg);
+}
+
+.blanco {
+    cursor: pointer;
+}
+
+
+
+.home {
+    width: 7.5vw;
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+.barraBotones {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+}
+
+.iconoHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vw;
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: 7.5vw;
+    height: 10vh;
+    background-image: url(../img/Casa.svg);
+
+    cursor: pointer;
+}
+
+.iconoHome:hover {
+    background-image: url(../img/CasaBlanco.svg);
+}
+
+.flechaRespuesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vw;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: 7.5vw;
+    height: 10vh;
+
+    background-image: url(../img/flechaDerecha.svg);
+
+    cursor: pointer;
+}
+
+.flechaRespuesta:hover {
+    background-image: url(../img/FlechaBlanco_Mesa%20de%20trabajo%201%20copia.svg);
+}
+
+
+
+
+
+
+
+#destacarPalabra1 {
+    font-family: "Futura", serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#destacarPalabra2 {
+    font-family: "Futura", serif;
+    font-size: 40px;
+    text-align: center;
+    color: #31305f;
+}
+
+#destacarPalabra3 {
+    font-family: "Futura", serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#destacarPalabra4 {
+    font-family: "Futura", serif;
+    font-size: 40px;
+    text-align: center;
+    color: #31305f;
+}
+
+#destacarPalabra5 {
+    font-family: "Futura", serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#destacarPalabra6 {
+    font-family: "Futura", serif;
+    font-size: 40px;
+    text-align: center;
+    color: #31305f;
+}
+
+
+
+#espases4 {
+    display: none;
+}
+
+#espases5 {
+    display: block;
+}
+
+#espases7 {
+    display: block;
+}
+
+#espases8 {
+    display: none;
+}
+
+.iconosRecorrido {
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.recorrido {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.iconoCara {
+    width: 70%;
+}
+
+.iconoElemento {
+    width: 70%;
+}
+
+
+
+
+
+#descripcion {
+    font-family: Futura;
+    color: #1E234D;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#descripcion2 {
+    font-family: Futura;
+    color: #1E234D;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#titulo {
+    Font-family: Futura;
+    color: #1E234D;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#image {
+    width: 30vw;
+    height: 30vh;
+}
+
+#image2 {
+    width: 30vw;
+    height: 30vh;
+}
+
+#titulo2 {
+    Font-family: Futura;
+    color: #1E234D;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+}
+
+
+/*//CSS Loading*/
+
+.hola {
+    background: #F5B15A;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.loading {
+    background: #F5B15A;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: spin 2000ms cubic-bezier(.75, .885, .32, 1.275) infinite;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+
+.loader-line {
+    border: 10px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap:nth-child(1) {
+    animation-delay: -50ms;
+}
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: #20345a;
+
+    opacity: 1;
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+
+@keyframes spin {
+
+    0%,
+    15% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.loading-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    color: #20345a;
+    font-size: 20px;
+    font-family: Futura;
+    letter-spacing: 3px;
+    line-height: 20px;
+    height: 120vh;
+    animation: fade 2s ease 0s infinite;
+}
+
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading1 {
+    background: #E45451;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.loading2 {
+    background: #F5B15A;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.loading3 {
+    background: #E45451;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.VerTrailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20345a;
+    width: 5vw;
+    height: 10vh;
+}
+
+.iconoVer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 7.5vw;
+    height: 10vh;
+    background-image: url(../img/TrailerAzul.svg);
+    text-align: center;
+    cursor: pointer;
+}
+
+.iconoVer:hover {
+    background-image: url(../img/TrailerBlanco.svg);
+}
+
+.iconoEscuchar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vw;
+    font-family: Futura;
+    color: #e4d6ce;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 7.5vw;
+    height: 10vh;
+    background-image: url(../img/EscucharAzul.svg);
+    text-align: center;
+    cursor: pointer;
+}
+
+.iconoEscuchar:hover {
+    background-image: url(../img/EscucharBlanco.svg);
+    font-family: Futura;
+    color: #20345a;
+    font-size: 20px;
+}
+
+#ver,
+#escuchar {
+    font-family: Futura;
+    color: #e4d6ce;
+    font-size: 20px;
+    height: auto;
+    width: 150px;
+    text-decoration: none;
+}
+
+#ver:hover {
+    color: #20345a;
+}
+
+#escuchar:hover {
+    color: #20345a;
+}
+
+.mobileLandscape{
+    display: none;
+}
+
+h5{
+    display: none;
+}
+
+/*//Cuando el Maximo sea de 600 hazme esto//*/
+@media only screen and (max-width: 600px) {
+
+    /*    //Logotipo Inicio//*/
+    #boton {
+        width: 60vw;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin: 10vh;
+        margin-top: 15vh;
+        line-height: 37px;
+    }
+
+    .botonBlanco {
+        width: 25vw;
+        background-size: 25vw;
+    }
+
+    /*    //Pantalla Como te sientes?//*/
+    #Logosentimiento {
+        width: 90%;
+        margin-top: 20%;
+    }
+
+    .botones1 {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 0vh;
+    }
+
+    /*//Este hace que se oculte en la versión web//*/
+    h2 {
+        display: none;
+    }
+
+    /*//Esto hace que se muestre el texto solo en el movil//*/
+    .texto1-mobile {
+        display: flex;
+    }
+
+    #destacarPalabra1 {
+        font-size: 20px ¡important;
+    }
+
+    #destacarPalabra2 {
+        font-size: 20px ¡important;
+    }
+
+    .switch {
+        background-size: 50vw;
+        min-height: 130px;
+    }
+
+    .indicador {
+        width: 20vw;
+        height: 20vw;
+        margin-left: 28.5vw;
+    }
+
+    .iconoFlecha {
+        width: 25vw;
+        background-size: 25vw;
+        height: 50vh;
+        margin-bottom: auto;
+        margin-top: 20%;
+    }
+
+    /*    <!--    //Pelicula o Cancion triste-->*/
+    .switch2,
+    .switch3 {
+        background-size: 50vw;
+        min-height: 130px;
+    }
+
+    .indicador2,
+    .indicador3 {
+        width: 20vw;
+        height: 20vw;
+        margin-left: 28.5vw;
+    }
+
+    .botones2,
+    .botones3 {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 0vh;
+    }
+
+    #destacarPalabra3 {
+        font-size: 20px ¡important;
+    }
+
+    #destacarPalabra4 {
+        font-size: 20px ¡important;
+    }
+
+    /*    //Loading Cancion Contento//*/
+    .loading-text {
+
+        font-size: 15px;
+        font-family: Futura;
+        letter-spacing: 2px;
+        line-height: 20px;
+        height: 130vh;
+    }
+
+    .loader-line {
+        border: 9px solid transparent;
+        width: 50px;
+    }
+
+    /*//Carta Contento//*/
+    #respuesta,
+    #respuesta3 {
+        width: 80vw;
+        height: 70vh;
+        border-radius: 50px;
+        border: 12px solid #20345a;
+    }
+
+    #descripcion,
+    #descripcion2 {
+        font-size: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .logoCarta {
+        width: 65vw;
+        height: 10vh;
+    }
+
+    .iconoHome {
+        width: 20vw;
+        background-size: 25vw;
+    }
+
+    .iconoVer,
+    .iconoEscuchar {
+        width: 20vw;
+        background-size: 25vw;
+    }
+
+    .flechaRespuesta {
+        width: 20vw;
+        background-size: 25vw;
+    }
+
+    .barraBotones {
+        width: 80%;
+    }
+
+    #ver,
+    #escuchar {
+        font-size: 12px;
+        height: auto;
+        width: 150px;
+    }
+
+    .iconosRecorrido {
+        width: 100%;
+        height: 10%;
+        margin-bottom: 1%;
+    }
+
+    #respuesta2,
+    #respuesta4 {
+        width: 80vw;
+        height: 70vh;
+        border-radius: 50px;
+        border: 12px solid #20345a;
+    }
+
+    #image,
+    #image2 {
+        width: 70vw;
+        height: 50vh;
+    }
+
+    #titulo,
+    #titulo2 {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+}
+
+
+
+/*//Cuando el Mínimo sea de 600 hazme esto//*/
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+    /*    //Logotipo Inicio//*/
+    #boton {
+        width: 50vw;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 50px;
+        margin: 10vh;
+        margin-top: auto;
+    }
+
+    .botonBlanco {
+        width: 20vw;
+        background-size: 15vw;
+        background-position: bottom;
+        margin-top: 300px;
+        margin-bottom: 50px;
+    }
+
+    /*    //Pantalla Como te sientes?//*/
+
+    .contenidor2, .contenidor3, .contenidor4, .contenidor5, .contenidooor3 {
+        background-size: 200vh;
+    }
+
+    #Logosentimiento {
+        width: 70%;
+        margin-top: 20%;
+    }
+
+    .botones1 {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 0vh;
+    }
+
+    /*//Este hace que se oculte en la versión web//*/
+    h2 {
+        display: none;
+    }
+
+    /*//Esto hace que se muestre el texto solo en el movil//*/
+    .texto1-mobile {
+        display: flex;
+    }
+
+    #destacarPalabra1 {
+        font-size: 30px ¡important;
+    }
+
+    #destacarPalabra2 {
+        font-size: 30px ¡important;
+    }
+
+    .switch {
+        background-size: 31.5vw;
+        min-height: 130px;
+    }
+
+    .indicador {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 36.3vw;
+    }
+
+    .iconoFlecha {
+        width: 15vw;
+        background-size: 15vw;
+        height: 50vh;
+        margin-bottom: 5%;
+        background-position: bottom;
+    }
+
+    /*    <!--    //Pelicula o Cancion triste-->*/
+    .switch2,
+    .switch3 {
+        background-size: 31.5vw;
+        min-height: 130px;
+    }
+
+    .indicador2,
+    .indicador3 {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 36.3vw;
+    }
+
+    .botones2,
+    .botones3 {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 0vh;
+    }
+
+    #destacarPalabra3 {
+        font-size: 20px ¡important;
+    }
+
+    #destacarPalabra4 {
+        font-size: 20px ¡important;
+    }
+
+    /*    //Loading Cancion Contento//*/
+    .loading-text {
+
+        font-size: 25px;
+        font-family: Futura;
+        letter-spacing: 2px;
+        line-height: 20px;
+        height: 130vh;
+    }
+
+    .loader-line {
+        border: 9px solid transparent;
+        width: 50px;
+    }
+
+    /*//Carta Contento//*/
+    #respuesta,
+    #respuesta3 {
+        width: 40vw;
+        height: 55vh;
+        border-radius: 50px;
+        border: 12px solid #20345a;
+    }
+
+    #descripcion,
+    #descripcion2 {
+        font-size: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .logoCarta {
+        width: 65vw;
+        height: 10vh;
+    }
+
+    .iconoHome {
+        width: 15vw;
+        height: 20vh;
+        background-size: 20vw;
+        background-position: bottom;
+    }
+
+    .iconoVer,
+    .iconoEscuchar {
+        width: 20vw;
+        height: 20vh;
+        background-size: 20vw;
+        background-position: bottom;
+    }
+
+    .flechaRespuesta {
+        width: 15vw;
+        height: 20vh;
+        background-size: 20vw;
+        background-position: bottom;
+    }
+
+    .barraBotones {
+        width: 50%;
+    }
+
+    #ver,
+    #escuchar {
+        font-size: 20px;
+        margin-top: 50px;
+        width: 150px;
+    }
+
+    .iconosRecorrido {
+        width: 80%;
+        height: 10%;
+        margin-bottom: 5%;
+    }
+
+    #respuesta2,
+    #respuesta4 {
+        width: 40vw;
+        height: 55vh;
+        border-radius: 50px;
+        border: 12px solid #20345a;
+    }
+
+    #image,
+    #image2 {
+        width: 35vw;
+        height: 50vh;
+    }
+
+    #titulo,
+    #titulo2 {
+        font-size: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+}
+
+
+/*//Cuando el Mínimo sea de 600 hazme esto en horizontal//*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /*    //Logotipo Inicio//*/
+    #boton {
+        width: 35vw;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 50px;
+        margin: 10vh;
+        margin-top: auto;
+    }
+
+    .botonBlanco {
+        width: 20vw;
+        height: 15vh;
+        background-size: 12vw;
+        background-position: bottom;
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+
+    /*    //Pantalla Como te sientes?//*/
+
+    .contenidor2, .contenidor3, .contenidor4, .contenidor5, .contenidooor3 {
+        background-size: 200vh;
+    }
+
+    #Logosentimiento {
+        width: 45%;
+        margin-top: 5%;
+    }
+
+    .botones1 {
+        margin-bottom: 0vh;
+    }
+
+    /*//Este hace que se oculte en la versión web//*/
+    h2 {
+        display: none;
+    }
+
+    /*//Esto hace que se muestre el texto solo en el movil//*/
+    .texto1-mobile {
+        display: flex;
+    }
+
+    #destacarPalabra1 {
+        font-size: 30px ¡important;
+    }
+
+    #destacarPalabra2 {
+        font-size: 30px ¡important;
+    }
+
+    .switch {
+        background-size: 31.5vw;
+        min-height: 190px;
+    }
+
+    .indicador {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 36.3vw;
+    }
+
+    .iconoFlecha {
+        width: 15vw;
+        background-size: 15vw;
+        height: 50vh;
+        margin-bottom: 5%;
+        background-position: bottom;
+    }
+
+    /*    <!--    //Pelicula o Cancion triste-->*/
+    .switch2,
+    .switch3 {
+       background-size: 31.5vw;
+        min-height: 190px;
+    }
+
+    .indicador2,
+    .indicador3 {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 36.3vw;
+    }
+
+    .botones2,
+    .botones3 {
+        margin-bottom: 0vh;
+    }
+
+    #destacarPalabra3 {
+        font-size: 20px ¡important;
+    }
+
+    #destacarPalabra4 {
+        font-size: 20px ¡important;
+    }
+
+    /*    //Loading Cancion Contento//*/
+    .loading-text {
+
+        font-size: 20px;
+        font-family: Futura;
+        letter-spacing: 2px;
+        line-height: 20px;
+        height: 130vh;
+    }
+
+    .loader-line {
+        border: 9px solid transparent;
+        width: 50px;
+    }
+
+    /*//Carta Contento//*/
+    #respuesta,
+    #respuesta3 {
+        width: 30vw;
+        height: 60vh;
+        border-radius: 50px;
+        border: 12px solid #20345a;
+    }
+
+    #descripcion,
+    #descripcion2 {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .logoCarta {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    .iconoHome {
+        width: 7vw;
+        height: 20vh;
+        background-size: 15vw;
+        background-position: bottom;
+    }
+
+    .iconoVer,
+    .iconoEscuchar {
+        width: 18vw;
+        height: 20vh;
+        background-size: 15vw;
+        background-position: bottom;
+    }
+
+    .flechaRespuesta {
+        width: 7vw;
+        height: 20vh;
+        background-size: 15vw;
+        background-position: bottom;
+    }
+
+    .barraBotones {
+        width: 50%;
+    }
+
+    #ver,
+    #escuchar {
+        font-size: 20px;
+        margin-top: 8px;
+        width: 150px;
+    }
+
+    .iconosRecorrido {
+        width: 50%;
+        height: 10%;
+        margin-top: 36px;
+    }
+
+    #respuesta2,
+    #respuesta4 {
+        width: 30vw;
+        height: 60vh;
+        border-radius: 50px;
+        border: 12px solid #20345a;
+    }
+
+    #image,
+    #image2 {
+        width: 35vw;
+        height: 50vh;
+    }
+
+    #titulo,
+    #titulo2 {
+        font-size: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+}
+
+
+@media screen and (max-height: 414px) and (orientation: landscape){
+    
+    .mobileLandscape {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E45451;
+    align-content: center;
+    justify-content: center;
+    
+}
+    h5{
+        font-size: 20px;
+        display: flex;
+        font-family: Futura;
+        color: #E4D7CE;
+        text-align: center;
+        margin-top: 20%;
+        line-height: 50px;
+    }
+    
+}
+

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estil.css">
+    
+    <title>MOOD</title>
+
+    <script src="JS/morphsvgplugin-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/MotionPathPlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <audio nocontrols id="sonido"></audio>
+
+    <div class="mobileLandscape"><h5>¡Ups!<br>Debes girar tu móvil para poder continuar.</h5></div>
+
+    <!--    //Pantalla CARGA-->
+    <div id="inicio" class="contenidor1">
+        <div id="boton">
+            <div id="start" class="escoge">
+                <!--    //Morphin-->
+                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.14 157.34">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #30305f;
+                            }
+
+                            .cls-2 {
+                                fill: none;
+                                stroke: #30305f;
+                                stroke-miterlimit: 10;
+                                stroke-width: 13px;
+                            }
+                        </style>
+                    </defs>
+                    <title>Logotipo SVG</title>
+                    <!--                //M-->
+                    <path class="cls-1" d="M23.43,128.21l9.22-54.72h14l10.88,29.18,10.8-29.18h14l9.22,54.72h-14L72.75,96.72,59.93,128.21H54.32L42.15,96.72l-4.68,31.49Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //D-->
+                    <path class="cls-1" d="M229,73.49h20.88a24.46,24.46,0,0,1,10.4,2.25,28.49,28.49,0,0,1,8.5,6,27.85,27.85,0,0,1,5.72,8.71,27.06,27.06,0,0,1,0,20.76,27.79,27.79,0,0,1-5.69,8.74,28.08,28.08,0,0,1-8.5,6,24.61,24.61,0,0,1-10.47,2.24H229Zm14.11,42.68h3.24a17.47,17.47,0,0,0,6.55-1.16,14,14,0,0,0,4.86-3.2,13.71,13.71,0,0,0,3-4.82,17.58,17.58,0,0,0,1-6.14,17,17,0,0,0-1.08-6.09,13.65,13.65,0,0,0-7.92-8.06,17.28,17.28,0,0,0-6.48-1.16h-3.24Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Triste-->
+                    <path id="espases2" class="cls-2" d="M118.56,183.51s13.9-21,39.47-21,40.05,21,40.05,21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Contenta-->
+                    <path id="espases1" class="cls-2" d="M198.08,141.54s-13.89,21-39.46,21-40.06-21-40.06-21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Ojo Izquierda-->
+                    <circle id="OI" class="cls-2 circulo" cx="101.14" cy="69.7" r="22.06" />
+                    <rect id="OIL" class="cls-1 linea" x="72.58" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ojo Derecha-->
+                    <circle id="OD" class="cls-2 circulo1" cx="168.38" cy="69.7" r="22.06" />
+                    <rect id="ODL" class="cls-1 linea1" x="139.81" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ceja Izquierda Arriba-->
+                    <rect id="C1" class="cls-1" x="80.72" width="40.84" height="13.68">
+                    </rect>
+                    <!--                //Ceja Derecha Abajo-->
+                    <rect id="C2" class="cls-1" x="147.95" y="27.36" width="40.84" height="13.68">
+                    </rect>
+                </svg>
+            </div>
+        </div>
+
+        <div id="TextoExplicacion">
+            <h1 id="TE">Te apetece escuchar una canción o ver una película y no sabes cual elegir?<br>MOOD te ayudará a tomar una decisión según tu estado de animo.</h1>
+
+            <div class="botonBlanco" onclick="canviaDiv()">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--    //Pantalla elección sentimiento-->
+    <div id="sentimientos" class="contenidor2">
+        <div class="botones">
+            <div class="logoMood"><svg id="Logosentimiento" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.14 157.34">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #30305f;
+                            }
+
+                            .cls-2 {
+                                fill: none;
+                                stroke: #30305f;
+                                stroke-miterlimit: 10;
+                                stroke-width: 13px;
+                            }
+                        </style>
+                    </defs>
+                    <title>Logotipo SVG</title>
+                    <!--                //M-->
+                    <path class="cls-1" d="M23.43,128.21l9.22-54.72h14l10.88,29.18,10.8-29.18h14l9.22,54.72h-14L72.75,96.72,59.93,128.21H54.32L42.15,96.72l-4.68,31.49Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //D-->
+                    <path class="cls-1" d="M229,73.49h20.88a24.46,24.46,0,0,1,10.4,2.25,28.49,28.49,0,0,1,8.5,6,27.85,27.85,0,0,1,5.72,8.71,27.06,27.06,0,0,1,0,20.76,27.79,27.79,0,0,1-5.69,8.74,28.08,28.08,0,0,1-8.5,6,24.61,24.61,0,0,1-10.47,2.24H229Zm14.11,42.68h3.24a17.47,17.47,0,0,0,6.55-1.16,14,14,0,0,0,4.86-3.2,13.71,13.71,0,0,0,3-4.82,17.58,17.58,0,0,0,1-6.14,17,17,0,0,0-1.08-6.09,13.65,13.65,0,0,0-7.92-8.06,17.28,17.28,0,0,0-6.48-1.16h-3.24Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Triste-->
+                    <path id="espases4" class="cls-2" d="M118.56,183.51s13.9-21,39.47-21,40.05,21,40.05,21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Contenta-->
+                    <path id="espases5" class="cls-2" d="M198.08,141.54s-13.89,21-39.46,21-40.06-21-40.06-21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Ojo Izquierda-->
+                    <circle id="OI" class="cls-2 circuloP1" cx="101.14" cy="69.7" r="22.06" />
+                    <rect id="OIL" class="cls-1 lineaP1" x="72.58" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ojo Derecha-->
+                    <circle id="OD" class="cls-2 circulo1P1" cx="168.38" cy="69.7" r="22.06" />
+                    <rect id="ODL" class="cls-1 linea1P1" x="139.81" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ceja Izquierda Arriba-->
+                    <rect id="C1" class="cls-1" x="80.72" y="15" width="40.84" height="13.68">
+                    </rect>
+                    <!--                //Ceja Derecha Arriba-->
+                    <rect id="C2" class="cls-1" x="147.95" y="15" width="40.84" height="13.68" />
+                </svg></div>
+            <div class="botones1">
+                <div class="texto1">
+                    <h2>Cómo te sientes,<br>
+                        <strong id="destacarPalabra1">contento</strong> o <strong id="destacarPalabra2">triste</strong>?</h2>
+                </div>
+                <div class="texto1-mobile">
+                    <p>Cómo te sientes,<br>
+                        contento o triste?</p>
+                </div>
+
+                <!--    //Switch Contento o Triste-->
+                <div class="switch" onclick="moverSwitch()">
+                    <div id="feliz" class="indicador"></div>
+                </div>
+
+            </div>
+            <div class="iconoFlecha" onclick="flecha1()"></div>
+        </div>
+
+    </div>
+
+
+
+    <!--    //Pantalla elección peli o cancion content0-->
+    <div id="opcion" class="contenidor3">
+        <div class="botones">
+            <div class="logoMood"><svg id="Logosentimiento" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.14 157.34">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #30305f;
+                            }
+
+                            .cls-2 {
+                                fill: none;
+                                stroke: #30305f;
+                                stroke-miterlimit: 10;
+                                stroke-width: 13px;
+                            }
+                        </style>
+                    </defs>
+                    <title>Logotipo SVG</title>
+                    <!--                //M-->
+                    <path class="cls-1" d="M23.43,128.21l9.22-54.72h14l10.88,29.18,10.8-29.18h14l9.22,54.72h-14L72.75,96.72,59.93,128.21H54.32L42.15,96.72l-4.68,31.49Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //D-->
+                    <path class="cls-1" d="M229,73.49h20.88a24.46,24.46,0,0,1,10.4,2.25,28.49,28.49,0,0,1,8.5,6,27.85,27.85,0,0,1,5.72,8.71,27.06,27.06,0,0,1,0,20.76,27.79,27.79,0,0,1-5.69,8.74,28.08,28.08,0,0,1-8.5,6,24.61,24.61,0,0,1-10.47,2.24H229Zm14.11,42.68h3.24a17.47,17.47,0,0,0,6.55-1.16,14,14,0,0,0,4.86-3.2,13.71,13.71,0,0,0,3-4.82,17.58,17.58,0,0,0,1-6.14,17,17,0,0,0-1.08-6.09,13.65,13.65,0,0,0-7.92-8.06,17.28,17.28,0,0,0-6.48-1.16h-3.24Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Triste-->
+                    <path id="espases2" class="cls-2" d="M118.56,183.51s13.9-21,39.47-21,40.05,21,40.05,21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Contenta-->
+                    <path id="espases1" class="cls-2" d="M198.08,141.54s-13.89,21-39.46,21-40.06-21-40.06-21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Ojo Izquierda-->
+                    <circle id="OI" class="cls-2 circuloP1" cx="101.14" cy="69.7" r="22.06" />
+                    <rect id="OIL" class="cls-1 lineaP1" x="72.58" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ojo Derecha-->
+                    <circle id="OD" class="cls-2 circulo1P1" cx="168.38" cy="69.7" r="22.06" />
+                    <rect id="ODL" class="cls-1 linea1P1" x="139.81" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ceja Izquierda Arriba-->
+                    <rect id="C1" class="cls-1" x="80.72" y="15" width="40.84" height="13.68">
+                    </rect>
+                    <!--                //Ceja Derecha Arriba-->
+                    <rect id="C2" class="cls-1" x="147.95" y="15" width="40.84" height="13.68" />
+                </svg></div>
+            <div class="botones2">
+                <div class="texto1">
+                    <h2>Qué te apetece,<br>
+                        una <strong id="destacarPalabra3">canción</strong> o una <strong id="destacarPalabra4">película</strong>?</h2>
+                </div>
+                <div class="texto1-mobile">
+                    <p>Qué te apetece,<br>
+                        canción o película?
+                </div>
+                <!--    //Switch peli o cancion contento-->
+                <div class="switch2" onclick="moverSwitch2()">
+                    <div id="feliz2" class="indicador2"></div>
+                </div>
+
+            </div>
+            <div class="iconoFlecha" onclick="flecha2()"></div>
+        </div>
+    </div>
+
+    <!--    //Pantalla elección peli o cancion triste-->
+    <div id="opcion2" class="contenidooor3">
+        <div class="botones">
+            <div class="logoMood"><svg id="Logosentimiento" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.14 157.34">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #30305f;
+                            }
+
+                            .cls-2 {
+                                fill: none;
+                                stroke: #30305f;
+                                stroke-miterlimit: 10;
+                                stroke-width: 13px;
+                            }
+                        </style>
+                    </defs>
+                    <title>Logotipo SVG</title>
+                    <!--                //M-->
+                    <path class="cls-1" d="M23.43,128.21l9.22-54.72h14l10.88,29.18,10.8-29.18h14l9.22,54.72h-14L72.75,96.72,59.93,128.21H54.32L42.15,96.72l-4.68,31.49Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //D-->
+                    <path class="cls-1" d="M229,73.49h20.88a24.46,24.46,0,0,1,10.4,2.25,28.49,28.49,0,0,1,8.5,6,27.85,27.85,0,0,1,5.72,8.71,27.06,27.06,0,0,1,0,20.76,27.79,27.79,0,0,1-5.69,8.74,28.08,28.08,0,0,1-8.5,6,24.61,24.61,0,0,1-10.47,2.24H229Zm14.11,42.68h3.24a17.47,17.47,0,0,0,6.55-1.16,14,14,0,0,0,4.86-3.2,13.71,13.71,0,0,0,3-4.82,17.58,17.58,0,0,0,1-6.14,17,17,0,0,0-1.08-6.09,13.65,13.65,0,0,0-7.92-8.06,17.28,17.28,0,0,0-6.48-1.16h-3.24Z" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Triste-->
+                    <path id="espases7" class="cls-2" d="M118.56,183.51s13.9-21,39.47-21,40.05,21,40.05,21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Boca Contenta-->
+                    <path id="espases8" class="cls-2" d="M198.08,141.54s-13.89,21-39.46,21-40.06-21-40.06-21" transform="translate(-23.43 -29.86)" />
+                    <!--                //Ojo Izquierda-->
+                    <circle id="OI" class="cls-2 circuloP1" cx="101.14" cy="69.7" r="22.06" />
+                    <rect id="OIL" class="cls-1 lineaP1" x="72.58" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ojo Derecha-->
+                    <circle id="OD" class="cls-2 circulo1P1" cx="168.38" cy="69.7" r="22.06" />
+                    <rect id="ODL" class="cls-1 linea1P1" x="139.81" y="62.68" width="57.07" height="13.68" />
+                    <!--                //Ceja Izquierda Arriba-->
+                    <rect id="C1" class="cls-1" x="80.72" y="15" width="40.84" height="13.68">
+                    </rect>
+                    <!--                //Ceja Derecha Arriba-->
+                    <rect id="C2" class="cls-1" x="147.95" y="15" width="40.84" height="13.68" />
+                </svg></div>
+            <div class="botones2">
+                <div class="texto1">
+                    <h2>Qué te apetece,<br>
+                        una <strong id="destacarPalabra5">canción</strong> o una <strong id="destacarPalabra6">película</strong>?</h2>
+                </div>
+                <div class="texto1-mobile">
+                    <p>Qué te apetece,<br>
+                        canción o película?
+                </div>
+                <!--    //Switch pelo o cancion Triste-->
+                <div class="switch3" onclick="moverSwitch3()">
+                    <div id="feliz3" class="indicador3"></div>
+                </div>
+            </div>
+            <div class="iconoFlecha" onclick="flecha3()"></div>
+        </div>
+    </div>
+
+
+    <!--//Preparando Canción Contento//-->
+    <div id="Load" class="loading">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+
+        <div class="loading-text">Preparando Canción</div>
+    </div>
+
+    <!--//Preparando Canción Triste//-->
+    <div id="Load1" class="loading1">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+
+        <div class="loading-text">Preparando Canción</div>
+    </div>
+
+    <!--//Preparando Pelicula Contento//-->
+    <div id="Load2" class="loading2">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+
+        <div class="loading-text">Preparando Película</div>
+    </div>
+
+    <!--//Preparando Pelicula Triste//-->
+    <div id="Load3" class="loading3">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+
+        <div class="loading-text">Preparando Película</div>
+    </div>
+
+
+
+    <!--    //Carta contento-->
+    <div id="solucion" class="contenidor4">
+        <div class="iconosRecorrido">
+            <div class="recorrido"><img class="iconoCara" id="iconoCara1"></div>
+            <div class="recorrido"><img class="iconoElemento" id="iconoElemento1"></div>
+        </div>
+        <!--    //Carta delante-->
+        <div id="respuesta">
+            <div class="logoCarta"><img class="moodTriste" src="img/logoContento.svg"></div>
+            <p id="descripcion"></p>
+        </div>
+        <!--    //Carta detras-->
+        <div id="respuesta2">
+            <div class="logoCarta"><img class="moodTriste" src="img/logoContento.svg"></div>
+            <img id="image">
+            <h3 id="titulo"></h3>
+        </div>
+        <div id="losBotones" class="barraBotones">
+            <div id="home" class="iconoHome" onclick="tornarAlInici()"></div>
+
+            <div class="iconoVer"><a id="ver" target="_blank">Ver</a></div>
+
+            <div id="flecha" class="flechaRespuesta" onclick="canviaCarta()"></div>
+        </div>
+    </div>
+
+    <div id="solucion2" class="contenidor5">
+        <div class="iconosRecorrido">
+            <div class="recorrido"><img class="iconoCara" id="iconoCara2"></div>
+            <div class="recorrido"><img class="iconoElemento" id="iconoElemento2"></div>
+        </div>
+        <!--    //Carta delante-->
+        <div id="respuesta3">
+            <div class="logoCarta"><img class="moodTriste" src="img/logoTriste.svg"></div>
+            <p id="descripcion2"></p>
+        </div>
+        <!--    //Carta detras-->
+        <div id="respuesta4">
+            <div class="logoCarta"><img class="moodTriste" src="img/logoTriste.svg"></div>
+            <img id="image2">
+            <h3 id="titulo2"></h3>
+
+        </div>
+        <div id="losBotones2" class="barraBotones">
+            <div id="home2" class="iconoHome" onclick="tornarAlInici()"></div>
+
+            <div class="iconoEscuchar"><a id="escuchar" target="_blank">Escuchar</a></div>
+
+            <div id="flecha2" class="flechaRespuesta" onclick="canviaCarta()"></div>
+        </div>
+    </div>
+
+
+    <script src="JS/mood.js"></script>
+    <script src="JS/cancionesCont.js"></script>
+    <script src="JS/cancionesTrist.js"></script>
+    <script src="JS/pelisCont.js"></script>
+    <script src="JS/pelisTrist.js"></script>
+
+
+</body></html>
